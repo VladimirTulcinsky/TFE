@@ -32,3 +32,8 @@ export interface applicationType {
   langages: string[],
   caracteristiques: string[]
 }
+
+export interface page {
+  title: string,
+  namePage: string
+}

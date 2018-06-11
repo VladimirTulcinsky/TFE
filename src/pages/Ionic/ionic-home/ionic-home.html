@@ -40,16 +40,9 @@
     Sujets
   </ion-list-header>
   <ion-list>
-    <ion-item (tap)="goTo('MaturitePage')">
-      Maturité
+    <ion-item *ngFor="let page of pages" (tap)="goTo(page.namePage)">
+      {{page.title}}
     </ion-item>
-    <ion-item (tap)="goTo('ArchitecturePage')">
-      Architecture
-    </ion-item>
-    <ion-item (tap)="goTo('TypeScriptPage')">
-      TypeScript
-    </ion-item>
-
   </ion-list>
 
 </ion-content>
