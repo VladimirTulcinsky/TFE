@@ -1,0 +1,33 @@
+<ion-header>
+  <header [title]="type.type"></header>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{type.type}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list-header>
+        Langages :
+      </ion-list-header>
+      <ion-list>
+        <ion-item *ngFor="let langage of type.langages">
+          {{langage}}
+        </ion-item>
+      </ion-list>
+
+      <ion-list-header>
+        Caractéristiques :
+      </ion-list-header>
+      <ion-list>
+        <ion-item *ngFor="let car of type.caracteristiques">
+          {{car}}
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
