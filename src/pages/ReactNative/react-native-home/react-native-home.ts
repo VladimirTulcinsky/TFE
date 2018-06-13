@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ReactNativeHomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +8,56 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'react-native-home.html',
 })
 export class ReactNativeHomePage {
+  pages = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pages[0] = {
+      title: "Maturité",
+      namePage: "MaturiteRnPage"
+    };
+
+    this.pages[1] = {
+      title: "Architecture",
+      namePage: "ArchitectureRnPage"
+    };
+
+    this.pages[2] = {
+      title: "JSX",
+      namePage: "JsxPage"
+    };
+
+    this.pages[3] = {
+      title: "Flow",
+      namePage: "FlowPage"
+    };
+
+    this.pages[4] = {
+      title: "Design",
+      namePage: "DesignRnPage"
+    };
+
+    this.pages[5] = {
+      title: "Data binding",
+      namePage: "DataBindingPage"
+    };
+
+    this.pages[6] = {
+      title: "Live reload avec lazy loading",
+      namePage: "LiveReloadPage"
+    };
+
+    this.pages[7] = {
+      title: "Live reload sans lazy loading",
+      namePage: ""
+    };
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReactNativeHomePage');
+  }
+
+  goTo(page) {
+    this.navCtrl.push(page);
   }
 
 }

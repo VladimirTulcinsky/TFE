@@ -1,0 +1,71 @@
+<ion-header>
+  <header title="Architecture"></header>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card padding>
+    <ion-card-content>
+      <ion-card-title>
+        Threads
+      </ion-card-title>
+      <ion-item-divider>
+        Coté natif
+      </ion-item-divider>
+      <ion-list>
+        <ion-item>
+          1. Principal (interactions gestuelles des utilisateurs et affichage éléments interface graphique)
+        </ion-item>
+        <ion-item>
+          2. Shadow queue (calculs de layout)
+        </ion-item>
+        <ion-item>
+          3. Modules natifs
+        </ion-item>
+
+        <ion-item-divider>
+          Coté React Native
+        </ion-item-divider>
+        <ion-item>
+          1. Thread qui exécute du code JavaScript dans JavaScriptCore
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card padding>
+    <img class="container" src="assets/imgs/reactNativeArchitecture1.png" />
+    <ion-card-content>
+      <ion-card-title>
+        Communication entre threads
+      </ion-card-title>
+      <ion-list>
+        <ion-item>
+          Asynchrone
+        </ion-item>
+        <ion-item>
+          Batch/traitements par lot
+        </ion-item>
+        <ion-item>
+          Sérialisation des données
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card padding>
+    <img class="container" src="assets/imgs/reactNativeArchitecture2.png" />
+    <ion-card-content>
+      <ion-card-title>
+        Recherche d'homologues natifs sur les téléphones
+      </ion-card-title>
+      <ion-list>
+        <ion-item>
+          JavaScript
+          <ion-icon name="arrow-round-forward"></ion-icon> Natif
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

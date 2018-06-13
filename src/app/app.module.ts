@@ -35,10 +35,10 @@ import { LiveReloadNllPage } from '../pages/Ionic/live-reload-nll/live-reload-nl
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     UtilityProvider,
     HttpClientModule,
     InAppBrowser
   ]
 })
-export class AppModule {}
+export class AppModule { }

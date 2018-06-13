@@ -10,39 +10,33 @@
       <ion-card-title>
         React Native
       </ion-card-title>
-      <!-- <ion-list>
+      <ion-list>
         <ion-item>
-          Open source
+          Framework basé sur la librairie React
         </ion-item>
         <ion-item>
-          Développement mobile hybride cross-platform
+          JavaScript (JSX)
         </ion-item>
         <ion-item>
-          Angular (avec TypeScript)
+          Véritable application native
         </ion-item>
         <ion-item>
-          SDK Front-end
-        </ion-item>
-        <ion-item>
-          Assortiment de composants
+          Hiérarchie de composants
         </ion-item>
         <ion-item>
           « Look \& Feel » natif
         </ion-item>
-        <ion-item>
-          Cordova
-        </ion-item>
-      </ion-list> -->
+      </ion-list>
     </ion-card-content>
   </ion-card>
 
   <ion-list-header>
     Sujets
   </ion-list-header>
-  <!-- <ion-list>
-      <ion-item *ngFor="let page of pages" (tap)="goTo(page.namePage)">
-        {{page.title}}
-      </ion-item>
-    </ion-list> -->
+  <ion-list class="custom-list">
+    <ion-item *ngFor="let page of pages" (tap)="goTo(page.namePage)">
+      {{page.title}}
+    </ion-item>
+  </ion-list>
 
 </ion-content>
