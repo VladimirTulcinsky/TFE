@@ -1,3 +1,22 @@
 page-maturite {
-
+  .custom-grid {
+    font-size: 1.4em;
+    ion-row {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid gray;
+      padding: 10px;
+    }
+    ion-row:first-child {
+      background-color: #387e73;
+      color: whitesmoke;
+      font-weight: bold;
+    }
+    ion-row ion-col:first-child {
+      background-color: #387e73;
+      color: whitesmoke;
+      font-weight: bold;
+    }
+  }
 }

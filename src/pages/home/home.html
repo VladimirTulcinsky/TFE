@@ -3,7 +3,8 @@
 </ion-header>
 
 
-<ion-content padding>
-  <button ion-button full (tap)="goToTypesApplications()">Types d'applications</button>
-  <button ion-button full (tap)="goToIonic()">Ionic</button>
+<ion-content padding class="buttons">
+  <button ion-button full round (tap)="goTo('TypesApplicationsPage')">Types d'applications</button>
+  <button ion-button full round (tap)="goTo('IonicHomePage')">Ionic</button>
+  <button ion-button full round (tap)="goTo('ReactNativeHomePage')">React Native</button>
 </ion-content>

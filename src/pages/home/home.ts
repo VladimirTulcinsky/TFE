@@ -24,12 +24,8 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
-  goToTypesApplications(){
-    this.navCtrl.push("TypesApplicationsPage");
-  }
-
-  goToIonic(){
-    this.navCtrl.push("IonicHomePage");
+  goTo(page:string){
+    this.navCtrl.push(page);
   }
 
 }

@@ -1,12 +1,32 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
+
 .toolbar-background {
   background-image: -webkit-gradient(linear, right top, left top, from(#243133), color-stop(#284345), color-stop(#2c5656), color-stop(#316a65), to(#387e73));
   background-image: linear-gradient(to left, #243133, #284345, #2c5656, #316a65, #387e73);
 }
 
-.cover {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 350px;
-  height: 350px;
-  align-items: center;
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.custom-list {
+  ion-item:hover {
+    background-color: #387e73;
+    color: white;
+  }
+
+  button:hover{
+    background-color: #387e73;
+    color: white;
+  }
 }

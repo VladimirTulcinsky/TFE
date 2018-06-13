@@ -19,21 +19,21 @@ export class TypesApplicationsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TypesApplicationsPage');
     this.types[0] = {
-      type: "NATIVES",
-      langages: ["ANDROID : JAVA & KOTLIN", "IOS : OBJECTIVE-C & SWIFT"],
-      caracteristiques: ["UNIQUE À LA PLATEFORME", "PERFORMANCES OPTIMALES", "FONCTIONNALITÉS NATIVES", "STORES OFFICIELS"]
+      type: "Natives",
+      langages: ["ANDROID : Java & Kotlin", "IOS : Objective-C & Swift"],
+      caracteristiques: ["Unique à la plateforme", "Performances optimales", "Fonctionnalités natives", "Stores officiels"]
     };
 
     this.types[1] = {
-      type: "WEB APP & PROGRESSIVE WEB APPS",
+      type: "Web apps & Progressive Web apps",
       langages: ["HTML", "CSS", "JS", "Pour résumer, les langages WEB"],
-      caracteristiques: ["INDÉPENDANT DE LA PLATEFORME", "PERFORMANCES LAISSENT À DÉSIRER", "PAS DE FONCTIONNALITÉS NATIVES", "PAS SUR LES STORES OFFICIELS"]
+      caracteristiques: ["Indépendant de la plateforme", "Performances laissent à désirer", "Pas de fonctionnalités natives", "Pas sur les stores officiels"]
     };
 
     this.types[2] = {
-      type: "HYBRIDES",
+      type: "Hybrides",
       langages: ["HTML", "CSS", "JS", "Pour résumer, les langages WEB"],
-      caracteristiques: ["CROSS-PLATFORM", "CORRECTES MAIS LIMITÉES À CAUSE DE LA WEBVIEW", "FONCTIONNALITÉS NATIVES", "STORES OFFICIELS"]
+      caracteristiques: ["Cross-platform", "Correctes mais limitées à cause de la Webview", "Fonctionnalités natives", "Stores officiels"]
     };
   }
 
