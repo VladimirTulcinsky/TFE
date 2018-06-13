@@ -37,13 +37,13 @@ export class ReactNativeHomePage {
     };
 
     this.pages[5] = {
-      title: "Data binding",
-      namePage: "DataBindingPage"
+      title: "Fonctionnalités natives",
+      namePage: "FonctionnalitesNativesRnPage"
     };
 
     this.pages[6] = {
-      title: "Live reload avec lazy loading",
-      namePage: "LiveReloadPage"
+      title: "Data binding",
+      namePage: "DataBindingRnPage"
     };
 
     this.pages[7] = {
