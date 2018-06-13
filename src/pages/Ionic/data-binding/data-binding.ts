@@ -1,9 +1,8 @@
-import { TypesApplicationsPage } from './../TypesApplications/types-applications/types-applications';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the DataBindingPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-data-binding',
+  templateUrl: 'data-binding.html',
 })
-export class HomePage {
+export class DataBindingPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
-
-  goTo(page:string){
-    this.navCtrl.push(page);
+    console.log('ionViewDidLoad DataBindingPage');
   }
 
 }

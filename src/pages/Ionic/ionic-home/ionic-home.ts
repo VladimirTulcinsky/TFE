@@ -1,13 +1,8 @@
 import { page } from './../../../providers/utility/utility';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LiveReloadNllPage } from '../live-reload-nll/live-reload-nll';
 
-/**
- * Generated class for the IonicHomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'ionic-home.html',
 })
 export class IonicHomePage {
-  pages: page[] = [];
+  pages = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pages[0] = {
@@ -43,6 +38,20 @@ export class IonicHomePage {
       namePage: "FonctionnalitesNativesPage"
     };
 
+    this.pages[5] = {
+      title: "Data binding",
+      namePage: "DataBindingPage"
+    };
+
+    this.pages[6] = {
+      title: "Live reload avec lazy loading",
+      namePage: "LiveReloadPage"
+    };
+
+    this.pages[7] = {
+      title: "Live reload sans lazy loading",
+      namePage: LiveReloadNllPage
+    };
 
   }
 

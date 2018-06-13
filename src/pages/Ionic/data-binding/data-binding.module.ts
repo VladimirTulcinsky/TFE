@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { LiveReloadPage } from './live-reload';
+import { DataBindingPage } from './data-binding';
 import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   declarations: [
-    LiveReloadPage,
+    DataBindingPage,
   ],
   imports: [
-    IonicPageModule.forChild(LiveReloadPage),
+    IonicPageModule.forChild(DataBindingPage),
     ComponentsModule
   ],
 })
-export class LiveReloadPageModule {}
+export class DataBindingPageModule { }

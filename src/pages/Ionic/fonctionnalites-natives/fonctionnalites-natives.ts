@@ -17,9 +17,9 @@ export class FonctionnalitesNativesPage {
     console.log('ionViewDidLoad FonctionnalitesNativesPage');
   }
 
-  goToSite(){
-    const site = this.iab.create('https://ionicframework.com/docs/native/in-app-browser/');
+  goToSite(site: string) {
+    this.iab.create(site);
   }
-  
+
 
 }
