@@ -12,14 +12,12 @@ import { UtilityProvider } from '../providers/utility/utility';
 import { HttpClientModule } from '@angular/common/http';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { LiveReloadNllPage } from '../pages/Ionic/live-reload-nll/live-reload-nll';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
-    LiveReloadNllPage
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -29,8 +27,7 @@ import { LiveReloadNllPage } from '../pages/Ionic/live-reload-nll/live-reload-nl
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage,
-    LiveReloadNllPage
+    TabsPage
   ],
   providers: [
     StatusBar,

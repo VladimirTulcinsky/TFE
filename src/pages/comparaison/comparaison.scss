@@ -1,0 +1,16 @@
+page-comparaison {
+  .custom-grid {
+    text-align: center;
+    ion-card-title {
+      text-decoration: underline;
+    }
+    ion-col:first-child {
+      border-right: 1px solid gray;
+    }
+  }
+  .container {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+  }
+}

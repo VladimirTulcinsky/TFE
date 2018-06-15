@@ -1,0 +1,12 @@
+page-architecture {
+  .container {
+    height: 350px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid color($colors, ionic);
+    border-radius: 5%;
+  }
+  ion-item {
+    word-wrap: break-word;
+  }
+}

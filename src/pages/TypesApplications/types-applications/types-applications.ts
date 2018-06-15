@@ -13,26 +13,26 @@ export class TypesApplicationsPage {
 
   types: applicationType[] = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private utilityProvider:UtilityProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private utilityProvider: UtilityProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TypesApplicationsPage');
     this.types[0] = {
       type: "Natives",
-      langages: ["ANDROID : Java & Kotlin", "IOS : Objective-C & Swift"],
+      langages: [{ langage: "ANDROID : Java & Kotlin", icon: "logo-android" }, { langage: "IOS : Objective-C & Swift", icon: "logo-apple" }],
       caracteristiques: ["Unique à la plateforme", "Performances optimales", "Fonctionnalités natives", "Stores officiels"]
     };
 
     this.types[1] = {
       type: "Web apps & Progressive Web apps",
-      langages: ["HTML", "CSS", "JS", "Pour résumer, les langages WEB"],
+      langages: [{ langage: "HTML", icon: "logo-html5" }, { langage: "CSS", icon: "logo-css3" }, { langage: "JS", icon: "logo-javascript" }, { langage: "Pour résumer, les langages WEB", icon: "" }],
       caracteristiques: ["Indépendant de la plateforme", "Performances laissent à désirer", "Pas de fonctionnalités natives", "Pas sur les stores officiels"]
     };
 
     this.types[2] = {
       type: "Hybrides",
-      langages: ["HTML", "CSS", "JS", "Pour résumer, les langages WEB"],
+      langages: [{ langage: "HTML", icon: "logo-html5" }, { langage: "CSS", icon: "logo-css3" }, { langage: "JS", icon: "logo-javascript" }, { langage: "Pour résumer, les langages WEB", icon: "" }],
       caracteristiques: ["Cross-platform", "Correctes mais limitées à cause de la Webview", "Fonctionnalités natives", "Stores officiels"]
     };
   }

@@ -1,0 +1,78 @@
+<ion-header>
+  <header title="IONIC"></header>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid class="custom-grid">
+        <ion-row>
+          <ion-col>
+            <img class="container" src="assets/imgs/logoIonic.png" />
+            <ion-card-title margin-bottom>
+              Ionic
+            </ion-card-title>
+            <ion-list>
+              <ion-item>
+                Open source
+              </ion-item>
+              <ion-item>
+                Développement mobile hybride cross-platform
+              </ion-item>
+              <ion-item>
+                Angular (avec TypeScript)
+              </ion-item>
+              <ion-item>
+                SDK Front-end
+              </ion-item>
+              <ion-item>
+                Assortiment de composants
+              </ion-item>
+              <ion-item>
+                « Look and Feel » natif
+              </ion-item>
+              <ion-item>
+                Cordova
+              </ion-item>
+            </ion-list>
+          </ion-col>
+
+          <ion-col>
+            <img class="container" src="assets/imgs/logoRN.png" />
+            <ion-card-title margin-bottom>
+              React Native
+            </ion-card-title>
+            <ion-list>
+              <ion-item>
+                Framework basé sur la librairie React
+              </ion-item>
+              <ion-item>
+                JavaScript (JSX)
+              </ion-item>
+              <ion-item>
+                Véritable application native
+              </ion-item>
+              <ion-item>
+                Hiérarchie de composants
+              </ion-item>
+              <ion-item>
+                « Look \& Feel » natif
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list-header>
+    Sujets
+  </ion-list-header>
+  <ion-list class="custom-list">
+    <ion-item *ngFor="let page of pages" (tap)="goTo(page.namePage)">
+      {{page.title}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

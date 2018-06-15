@@ -17,11 +17,11 @@ export class UtilityProvider {
     console.log('Hello UtilityProvider Provider');
   }
 
-  setCurrentType(type){
+  setCurrentType(type) {
     this.currentType = type;
   }
 
-  getCurrentType(){
+  getCurrentType() {
     return this.currentType;
   }
 
@@ -29,6 +29,11 @@ export class UtilityProvider {
 
 export interface applicationType {
   type: string,
-  langages: string[],
+  langages: langage[],
   caracteristiques: string[]
+}
+
+interface langage{
+  langage: string,
+  icon:string
 }

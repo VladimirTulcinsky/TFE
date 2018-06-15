@@ -1,0 +1,40 @@
+page-maturite {
+  .custom-grid {
+    font-size: 1.4em;
+    ion-row {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    // ion-row ion-col:first-child {
+    //   font-weight: bold;
+    //   border-right: 1px solid gray;
+    // }
+  }
+  .ionic {
+    ion-row:first-child {
+      background-color: color($colors, ionic);
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: x-large;
+    }
+  }
+  .react {
+    ion-row:first-child {
+      background-color: color($colors, react);
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: x-large;
+    }
+  }
+  .container {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+}
