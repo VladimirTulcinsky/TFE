@@ -33,7 +33,7 @@ export interface applicationType {
   caracteristiques: string[]
 }
 
-interface langage{
+interface langage {
   langage: string,
-  icon:string
+  icon: string
 }
