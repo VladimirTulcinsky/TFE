@@ -20,7 +20,7 @@ export class TypesApplicationsPage {
     console.log('ionViewDidLoad TypesApplicationsPage');
     this.types[0] = {
       type: "Natives",
-      langages: [{ langage: "ANDROID : Java & Kotlin", icon: "logo-android" }, { langage: "IOS : Objective-C & Swift", icon: "logo-apple" }],
+      langages: [{ langage: "Java & Kotlin", icon: "logo-android" }, { langage: "Objective-C & Swift", icon: "logo-apple" }],
       caracteristiques: ["Unique à la plateforme", "Performances optimales", "Fonctionnalités natives", "Stores officiels"]
     };
 

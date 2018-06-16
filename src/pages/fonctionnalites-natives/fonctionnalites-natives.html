@@ -4,11 +4,15 @@
 
 
 <ion-content padding>
-  <ion-card>
+
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoIonic.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="ionic-background" padding>
     <ion-card-content>
-      <ion-card-title>
-        IONIC
-      </ion-card-title>
       <div class="buttons">
         <button ion-button full round (tap)="goToSite('https://ionicframework.com/docs/native/in-app-browser/')">Ionic Native</button>
         <button ion-button full round (tap)="goToSite('https://market.ionicframework.com/')">Ionic Market</button>
@@ -16,11 +20,16 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoRN.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="react-background">
     <ion-card-content>
-      <ion-card-title>REACT NATIVE</ion-card-title>
       <ion-grid class="custom-grid">
-        <ion-row>
+        <ion-row class="background">
           <ion-col>
           </ion-col>
           <ion-col>

@@ -4,52 +4,71 @@
 
 
 <ion-content padding>
-  <ion-card padding>
-    <img class="container" src="assets/imgs/dataBinding.png" />
+
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoIonic.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card padding class="ionic-background">
     <ion-card-content>
       <ion-card-title>
         Data binding
       </ion-card-title>
-      <ion-list>
-        <ion-item>
-          Interpolation
-        </ion-item>
-        <ion-item>
-          Property binding
-        </ion-item>
-        <ion-item>
-          Event binding
-        </ion-item>
-        <ion-item>
-          Two-way data binding
-        </ion-item>
-      </ion-list>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Interpolation
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Property binding
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Event binding
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Two-way data binding
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col>
+          <img padding class="container" src="assets/imgs/DataBinding.png" />
+        </ion-col>
+      </ion-row>
     </ion-card-content>
   </ion-card>
 
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoRN.png" />
+    </ion-col>
+  </ion-row>
+
   <!-- REACT NATIVE -->
-  <ion-card padding>
+  <ion-card padding class="react-background">
     <ion-card-content>
       <ion-row>
-        <ion-col>
+        <ion-col col-6>
           <ion-card-title>
             Data binding
           </ion-card-title>
           <ion-list>
             <ion-item>
-              One-way data binding
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>One-way data binding
             </ion-item>
             <ion-item>
-              Reflète les modiﬁcations apportées dans le modèle, dans la vue
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Reflète modiﬁcations du modèle, dans la vue
             </ion-item>
             <ion-item>
-              Vue déclenche événements du composant
+              <ion-icon name="arrow-dropright" margin-right></ion-icon>Vue déclenche événements du composant
             </ion-item>
           </ion-list>
         </ion-col>
 
-        <ion-col padding>
-          <pre><code [innerHTML]="code"></code></pre>
+        <ion-col padding col-6>
+          <img padding class="container-rn" src="assets/imgs/DataBindingRN.png" />
         </ion-col>
       </ion-row>
 

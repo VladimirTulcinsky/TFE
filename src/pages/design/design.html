@@ -3,51 +3,86 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
-    <img class="container" src="assets/imgs/Sass.png" />
+
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoIonic.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="ionic-background">
     <ion-card-content>
       <ion-card-title>
-        Sass
+        Design
       </ion-card-title>
-
       <ion-row>
         <ion-col>
-          FONCTIONNALITÉS SUPPLÉMENTAIRES :
+          <ion-list>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Utilisation de variables
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Imbrication de sélecteurs
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Import partials
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Mixins
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Réduction de code et propreté
+            </ion-item>
+            <ion-item>
+              <ion-icon name="arrow-dropdown" margin-right></ion-icon> Assortiment de composants graphiques
+            </ion-item>
+            <ion-item>
+              <ion-label>Checkbox 1</ion-label>
+              <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Checkbox 2</ion-label>
+              <ion-checkbox></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-range>
+                <ion-icon range-left name="sunny"></ion-icon>
+                <ion-icon range-right small  name="sunny"></ion-icon>
+              </ion-range>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Ouvert</ion-label>
+              <ion-toggle checked="false"></ion-toggle>
+            </ion-item>
+
+            <ion-list radio-group>
+              <ion-item>
+                <ion-label>Première</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Deuxième</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Troisième</ion-label>
+                <ion-radio value="python"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-list>
         </ion-col>
         <ion-col>
-          <ion-row>
-            UTILISATION DE VARIABLES
-          </ion-row>
-          <ion-row>
-            IMBRICATION DE SÉLECTEURS
-          </ion-row>
-          <ion-row>
-            IMPORT PARTIALS
-          </ion-row>
-          <ion-row>
-            MIXINS
-          </ion-row>
+          <img class="container" src="assets/imgs/Sass.png" />
         </ion-col>
       </ion-row>
-      <ion-row>
-        AVANTAGES : RÉDUCTION DE CODE ET PROPRETÉ
-      </ion-row>
-      <ion-row>
-        VASTE ASSORTIMENT DE COMPOSANTS GRAPHIQUES
-      </ion-row>
-
     </ion-card-content>
   </ion-card>
 
-  <ion-item>
-    <ion-label>Daenerys Targaryen</ion-label>
-    <ion-checkbox color="dark" checked="true"></ion-checkbox>
-  </ion-item>
 
-  <ion-item>
-    <ion-label>Arya Stark</ion-label>
-    <ion-checkbox disabled="true"></ion-checkbox>
-  </ion-item>
 
 
   <ion-fab top right edge>
@@ -71,67 +106,41 @@
   </ion-fab>
 
 
-  <ion-item>
-    <ion-range>
-      <ion-icon range-left small name="sunny"></ion-icon>
-      <ion-icon range-right name="sunny"></ion-icon>
-    </ion-range>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Sam</ion-label>
-    <ion-toggle checked="false"></ion-toggle>
-  </ion-item>
-
-  <ion-list radio-group>
-    <ion-list-header>
-      Language
-    </ion-list-header>
-
-    <ion-item>
-      <ion-label>Go</ion-label>
-      <ion-radio checked="true" value="go"></ion-radio>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Rust</ion-label>
-      <ion-radio value="rust"></ion-radio>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Python</ion-label>
-      <ion-radio value="python"></ion-radio>
-    </ion-item>
-  </ion-list>
 
 
-  <ion-card padding>
+  <ion-row>
+    <ion-col text-center>
+      <img class="logo-container" src="assets/imgs/logoRN.png" />
+    </ion-col>
+  </ion-row>
+
+  <ion-card padding class="react-background">
     <ion-card-content>
       <ion-row>
-        <ion-col>
+        <ion-col col-5>
           <ion-card-title>
             Design
           </ion-card-title>
           <ion-list>
             <ion-item>
-              Syntaxe détaillée de CSS
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Syntaxe détaillée de CSS
             </ion-item>
             <ion-item>
-              Objet JavaScript StyleSheet
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Objet JavaScript StyleSheet
             </ion-item>
             <ion-item>
-              Valeurs absolues
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Valeurs absolues
             </ion-item>
             <ion-item>
-              CamelCase
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> CamelCase
             </ion-item>
             <ion-item>
-              Expressions JavaScript
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> Expressions JavaScript
             </ion-item>
           </ion-list>
         </ion-col>
-        <ion-col padding>
-          <pre><code [innerHTML]="code"></code></pre>
+        <ion-col>
+          <img class="round-edges box-shadow" src="assets/imgs/StyleSheet.png" />
         </ion-col>
       </ion-row>
 

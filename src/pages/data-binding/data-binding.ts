@@ -17,14 +17,6 @@ export class DataBindingPage {
 
   code: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.code = `
-    render() { 
-      return &ltinput value={this.state.value} onChange={this.changeValue} /&gt 
-    }
-   
-    changeValue(e) {
-      this.setState({value: e.target.value}); 
-    }`;
   }
 
   ionViewDidLoad() {

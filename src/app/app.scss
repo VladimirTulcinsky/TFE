@@ -41,9 +41,15 @@ $box-shadow: 0 4px 8px 0 rgba(0,
 }
 
 .ionic-background {
-  background-color: rgba($color: color($colors, ionic), $alpha: 0.3)
+  background-color: rgba($color: color($colors, ionic), $alpha: 0.1)
 }
 
 .react-background {
-  background-color: rgba($color: color($colors, react), $alpha: 0.3)
+  background-color: rgba($color: color($colors, react), $alpha: 0.1)
+}
+
+.logo-container {
+  height: 100px;
+  width: 100px;
+  margin: auto;
 }

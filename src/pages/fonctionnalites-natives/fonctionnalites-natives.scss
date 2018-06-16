@@ -1,26 +1,26 @@
 page-fonctionnalites-natives {
   .buttons * {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     :hover {
-      font-size: medium;
+      font-size: 4rem;
       font-weight: bold;
     }
   }
   .custom-grid {
     font-size: 1.4em;
-    ion-row {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    
+    > ion-row {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      
       border: 1px solid gray;
       padding: 10px;
     }
-    ion-row:first-child {
-      background-color: #387e73;
-      color: whitesmoke;
-      font-weight: bold;
-    }
-    ion-row ion-col:first-child {
+    .background {
       background-color: #387e73;
       color: whitesmoke;
       font-weight: bold;
