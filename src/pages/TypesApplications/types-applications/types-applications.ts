@@ -1,7 +1,6 @@
 import { UtilityProvider, applicationType } from './../../../providers/utility/utility';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DetailViewPage } from '../detail-view/detail-view';
 
 
 @IonicPage()

@@ -1,15 +1,15 @@
 import { ComponentsModule } from './../../components/components.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ReloadPage } from './reload';
+import { StateManagementPage } from './state-management';
 
 @NgModule({
   declarations: [
-    ReloadPage,
+    StateManagementPage,
   ],
   imports: [
-    IonicPageModule.forChild(ReloadPage),
+    IonicPageModule.forChild(StateManagementPage),
     ComponentsModule
   ],
 })
-export class ReloadPageModule {}
+export class StateManagementPageModule {}

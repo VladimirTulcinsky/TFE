@@ -42,14 +42,15 @@ export class ComparaisonPage {
     };
 
     this.pages[6] = {
-      title: "Live reload avec lazy loading",
-      namePage: "LiveReloadPage"
+      title: "Reload",
+      namePage: "ReloadPage"
     };
 
-    // this.pages[7] = {
-    //   title: "Live reload sans lazy loading",
-    //   namePage: LiveReloadNllPage
-    // };
+    this.pages[7] = {
+      title: "State management",
+      namePage: "StateManagementPage"
+    };
+
   }
 
   goTo(page) {
