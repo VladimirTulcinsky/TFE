@@ -8,8 +8,20 @@ page-maturite {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      border: 1px solid gray;
       padding: 10px;
+    }
+    ion-row ion-col:not(:first-child) {
+      text-align: center;
+    }
+    // ion-row ion-col:not(:nth-child(2)) {
+    //   text-align: left;
+    //   align-self: center;
+    // }
+    ion-row {
+      border: 1px solid gray;
+    }
+    ion-row ion-col{
+      align-self: center;
     }
   }
   .background {

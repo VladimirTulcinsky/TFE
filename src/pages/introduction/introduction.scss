@@ -1,0 +1,25 @@
+page-introduction {
+  .custom-grid {
+    text-align: center;
+    ion-card-title {
+      text-decoration: underline;
+    }
+    ion-col:first-child {
+      border: 1px solid color($colors, ionic);
+      border-radius: 10px;
+      margin-right: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    ion-col:nth-child(2) {
+      border: 1px solid color($colors, react);
+      border-radius: 10px;
+      margin-left: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  .container {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+  }
+}

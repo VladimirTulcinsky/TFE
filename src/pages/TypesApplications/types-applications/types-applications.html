@@ -4,9 +4,32 @@
 
 
 <ion-content padding>
-  <ion-list class="custom-list">
-    <button ion-item *ngFor="let type of types" (click)="goToDetailView(type)">
-      {{ type.type }}
-    </button>
-  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      Types d'applications
+    </ion-card-header>
+    <ion-card-content padding-bottom>
+      <ion-row>
+
+        <ion-col *ngFor="let type of types">
+          <ion-list-header>
+            {{type.type}}
+          </ion-list-header>
+          <ion-list>
+            <ion-item *ngFor="let item of type.langages">
+              <ion-icon class="large-icon" [name]=item.icon margin-left margin-right></ion-icon>
+              {{item.langage}}
+            </ion-item>
+          </ion-list>
+
+          <ion-list>
+            <ion-item *ngFor="let car of type.caracteristiques">
+              <ion-icon name="arrow-dropright" margin-right></ion-icon> {{car}}
+            </ion-item>
+          </ion-list>
+        </ion-col>
+
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -3,9 +3,20 @@ page-conclusion {
     ion-icon {
       font-size: 8rem;
     }
-    ion-col{
-        text-align: center;
-        align-self: center;
+    ion-col {
+      text-align: center;
+      align-self: center;
+    }
+    ion-col:first-child {
+      font-size: x-large;
+      font-weight: bold;
+      text-align: left;
+    }
+    ion-col:not(:first-child) {
+      color: color($colors, ionic);
+    }
+    ion-col [name="close"] {
+      color: red;
     }
   }
 }
